@@ -7,12 +7,12 @@ body, html {
     width: 200px;
     height: 500px;
     margin: 0 auto;
-    background: url(/Simple-Punchbag-Game/img/bag.png) center no-repeat;
+    background: url(/vueDemo/img/bag.png) center no-repeat;
     background-size: 80%;
 }
 
 #bag.burst{
-    background-image: url(/Simple-Punchbag-Game/img/bag-burst.png);
+    background-image: url(/vueDemo/img/bag-burst.png);
 }
 
 #bag-health{
