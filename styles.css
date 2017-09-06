@@ -6,7 +6,7 @@ body, html {
 #bag{
     width: 200px;
     height: 500px;
-    margin: 0 auto;
+    margin: -44px auto;
     background: url(/img/bag.png) center no-repeat;
     background-size: 80%;
 }
