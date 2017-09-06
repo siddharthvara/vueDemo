@@ -1,0 +1,45 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    /*background-image: url("img_girl.jpg");*/
+}
+#bag{
+    width: 200px;
+    height: 500px;
+    margin: 0 auto;
+    background: url(/Simple-Punchbag-Game/img/bag.png) center no-repeat;
+    background-size: 80%;
+}
+
+#bag.burst{
+    background-image: url(/Simple-Punchbag-Game/img/bag-burst.png);
+}
+
+#bag-health{
+    width: 200px;
+    border: 2px solid #000;
+    margin: 0 auto 20px auto;
+}
+
+#bag-health div{
+    height: 20px;
+    background: #DC1038
+}
+
+#controls{
+    width: 250px;
+    margin: 0 auto;
+}
+#message{
+    background: #DC1038;
+    margin: 0 auto;
+    text-align: center;
+    width: 250px;
+}
+#health{
+    margin: 0 auto;
+    text-align: center;
+    width: 250px;
+}
+
+
