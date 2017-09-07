@@ -6,13 +6,13 @@ body, html {
 #bag{
     width: 200px;
     height: 500px;
-    margin: 0 auto;
-    background: url(/Simple-Punchbag-Game/img/bag.png) center no-repeat;
+    margin: -44px auto;
+    background: url(/img/bag.png) center no-repeat;
     background-size: 80%;
 }
 
 #bag.burst{
-    background-image: url(/Simple-Punchbag-Game/img/bag-burst.png);
+    background-image: url(/img/bag-burst.png);
 }
 
 #bag-health{
