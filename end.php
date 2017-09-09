@@ -72,9 +72,10 @@
         lookupStartingZip: _.debounce(function() {
           var app = this
           app.startingCity = "Searching..."
-          axios.get('http://postalpincode.in/api/pincode/' + app.startingZip)
+          axios.get('http://maps.googleapis.com/maps/api/geocode/json?address='+ app.startingZip +'&sensor=true')
                 .then(function (response) {
-                  app.startingCity = response.data.city + ', ' + response.data.state
+                  console.log(response.data.results[0].formatted_address)
+                  app.startingCity = response.data.results[0].formatted_address
                 })
                 .catch(function (error) {
                   app.startingCity = "Invalid Zipcode"
@@ -83,9 +84,9 @@
         lookupEndingZip: _.debounce(function() {
           var app = this
           app.endingCity = "Searching..."
-          axios.get('http://postalpincode.in/api/pincode/' + app.endingZip)
+          axios.get('http://maps.googleapis.com/maps/api/geocode/json?address='+ app.startingZip +'&sensor=true')
                 .then(function (response) {
-                  app.endingCity = response.data.city + ', ' + response.data.state
+                  app.endingCity = response.data.results[0].formatted_address
                 })
                 .catch(function (error) {
                   app.endingCity = "Invalid Zipcode"
